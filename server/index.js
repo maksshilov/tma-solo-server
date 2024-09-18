@@ -42,9 +42,11 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "..", "client", "index.html"));
 });
 
+const PORT = process.env.PORT || 5000;
+
 async function start() {
   try {
-    app.listen(3000, () => console.log(`Server starts at port ${5000}`));
+    app.listen(PORT, () => console.log(`Server starts at port ${PORT}`));
   } catch (error) {
     process.exit();
   }
