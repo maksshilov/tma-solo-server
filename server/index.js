@@ -44,7 +44,7 @@ app.get("*", (req, res) => {
 
 async function start() {
   try {
-    app.listen(5000, () => console.log(`Server starts at port ${5000}`));
+    app.listen(3000, () => console.log(`Server starts at port ${5000}`));
   } catch (error) {
     process.exit();
   }
