@@ -1,0 +1,22 @@
+{
+  "name": "tma-solo-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev":"cross-env NODE_ENV=development nodemon ./server",
+    "prod": "cross-env NODE_ENV=production node ./server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.21.0",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.5"
+  }
+}
